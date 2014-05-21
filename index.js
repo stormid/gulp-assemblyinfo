@@ -1,7 +1,7 @@
 'use strict';
 
 var gutil = require('gulp-util'),
- through = require('through2'),
+    through = require('through2'),
     util = require('util'),
     _ = require('lodash');
 
@@ -38,7 +38,7 @@ function writeAttributes(options, languageEngine) {
     var result = [];
 
     _.forEach(namespaces, function(n) {
-       result.push(languageEngine.using(n));
+        result.push(languageEngine.using(n));
     });
 
     result.push('');
