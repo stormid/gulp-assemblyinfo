@@ -1,0 +1,29 @@
+{
+  "name": "gulp-assemblyinfo",
+  "version": "0.0.1",
+  "description": "AssemblyInfo.cs file generator plugin for gulp",
+  "main": "index.js",
+  "scripts": {
+    "test": "testem -l node"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/carcer/gulp-assemblyinfo"
+  },
+  "keywords": [
+    "gulpplugin"
+  ],
+  "author": {
+    "name": "Chris Canal <chris@e4ums.co.uk>",
+    "company": "StormId"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/carcer/gulp-assemblyinfo/issues"
+  },
+  "dependencies": {
+    "gulp-util": "^2.2.14",
+    "lodash": "^2.4.1",
+    "through2": "^0.4.1"
+  }
+}
