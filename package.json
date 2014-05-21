@@ -3,9 +3,6 @@
   "version": "0.0.1",
   "description": "AssemblyInfo.cs file generator plugin for gulp",
   "main": "index.js",
-  "scripts": {
-    "test": "testem -l node"
-  },
   "repository": {
     "type": "git",
     "url": "https://github.com/carcer/gulp-assemblyinfo"
