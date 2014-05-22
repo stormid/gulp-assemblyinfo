@@ -1,6 +1,6 @@
 {
   "name": "gulp-assemblyinfo",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "AssemblyInfo.cs file generator plugin for gulp",
   "main": "index.js",
   "repository": {
@@ -23,5 +23,11 @@
     "lodash": "^2.4.1",
     "through2": "^0.4.1",
     "util": "^0.10.3"
+  },
+  "devDependencies": {
+    "event-stream": "^3.1.5",
+    "jasmine-node": "^1.14.3",
+    "mocha": "^1.19.0",
+    "vinyl": "^0.2.3"
   }
 }
