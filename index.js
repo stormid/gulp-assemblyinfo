@@ -76,11 +76,17 @@ function writeAttributes(options, languageEngine) {
 
 module.exports = function(options) {
     return through.obj(function(file, enc, callback){
-        if (!options.outputFile) this.emit('error', new gutil.PluginError(pluginName, 'outputFile is required'));
+        if (!options.outputFile) {
+            this.emit('error', new gutil.PluginError(pluginName, 'outputFile is required'));
+            return callback();
+        }
 
         var languageEngine = languageEngines[options.language || 'cs'];
 
-        if (!languageEngine)  this.emit('error', new gutil.PluginError(pluginName, util.format('language "%s" is not recognised', options.language)));
+        if (!languageEngine) {
+            this.emit('error', new gutil.PluginError(pluginName, util.format('language "%s" is not recognised', options.language)));
+            return callback();
+        }
 
         var attributes = writeAttributes(options, languageEngine);
 
