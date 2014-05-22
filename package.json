@@ -3,6 +3,9 @@
   "version": "0.0.2",
   "description": "AssemblyInfo.cs file generator plugin for gulp",
   "main": "index.js",
+    "scripts": {
+      "test":"jasmine-node test.js --matchall"
+    },
   "repository": {
     "type": "git",
     "url": "https://github.com/carcer/gulp-assemblyinfo"
