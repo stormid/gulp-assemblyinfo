@@ -90,7 +90,6 @@ describe('gulp-assemblyinfo', function() {
                 });
 
                 asm.once('data', function(file){
-                    console.log(file.contents.toString());
                     lines = _.where(file.contents.toString().split('\n'), function(x) {return x;});
                 });
                 asm.write();
@@ -132,7 +131,6 @@ describe('gulp-assemblyinfo', function() {
                 });
 
                 asm.once('data', function(file){
-                    console.log(file.contents.toString());
                     lines = _.where(file.contents.toString().split('\n'), function(x) {return x;});
                 });
                 asm.write();
