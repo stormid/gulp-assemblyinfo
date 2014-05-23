@@ -21,7 +21,7 @@ var languageEngines = {
     },
     'vb' : {
         attribute: function(attr, val){
-            return util.format('<assembly: %s(%s)>', attr, _.isBoolean(val) ? val : util.format('"%s"', val));
+            return util.format('<assembly: %s(%s)>', attr, _.isBoolean(val) ? (val ? "True" : "False") : util.format('"%s"', val));
         },
         attributeEmpty: function(attr){
             return util.format('<assembly: %s()>', attr);
@@ -63,13 +63,13 @@ function writeAttributes(options, languageEngine) {
         _.extend(items, options.customAttributes);
 
     _.forOwn(items, function(key, item) {
-        if ( items[item] ){
+        if (!_.isNull(items[item]) && !_.isUndefined(items[item]) ) {
             if ( items[item] === 'empty')
                 result.push(languageEngine.attributeEmpty(item));
             else
                 result.push(languageEngine.attribute(item, items[item]));
         }
-    })
+    });
 
     return result.join('\n');
 }

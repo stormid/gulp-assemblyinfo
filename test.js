@@ -257,12 +257,15 @@ describe('gulp-assemblyinfo', function() {
                         fileVersion: "fileVersion",
                         customAttributes: {
                             'test': 'empty',
-                            'test2': "value"
+                            'test2': "value",
+                            'test3': true,
+                            'test4': false
                         }
                     });
 
                     asm.once('data', function(file){
                         lines = _.where(file.contents.toString().split('\n'), function(x) {return x;});
+                        console.log(lines);
                     });
                     asm.write();
                     cb();
@@ -293,7 +296,7 @@ describe('gulp-assemblyinfo', function() {
                 });
 
                 it('should set ComVisible', function() {
-                    assertLine('<assembly: ComVisible(true)>');
+                    assertLine('<assembly: ComVisible(True)>');
                 });
 
                 it('should set Guid', function() {
@@ -311,6 +314,11 @@ describe('gulp-assemblyinfo', function() {
                 it('should set customAttributes', function() {
                     assertLine('<assembly: test()>');
                     assertLine('<assembly: test2("value")>');
+                });
+
+                it('should set boolean properly', function() {
+                    assertLine('<assembly: test3(True)>');
+                    assertLine('<assembly: test4(False)>');
                 });
 
                 function assertLine( expected){
