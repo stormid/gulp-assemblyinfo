@@ -24,7 +24,7 @@ var languageEngines = {
             return util.format('<assembly: %s(%s)>', attr, _.isBoolean(val) ? val : util.format('"%s"', val));
         },
         attributeEmpty: function(attr){
-            return util.format('<assembly: %s(%s)>', attr);
+            return util.format('<assembly: %s()>', attr);
         },
         using: function(ns) {
             return util.format('Imports %s', ns);
