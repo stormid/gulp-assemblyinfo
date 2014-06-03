@@ -4,8 +4,8 @@
 
 > AssemblyInfo.cs file generator plugin for [gulp](https://github.com/wearefractal/gulp).
 
-[travis-url]: http://travis-ci.org/carcer/gulp-assemblyinfo
-[travis-image]: https://travis-ci.org/carcer/gulp-assemblyinfo.svg?branch=master
+[travis-url]: http://travis-ci.org/stormid/gulp-assemblyinfo
+[travis-image]: https://travis-ci.org/stormid/gulp-assemblyinfo.svg?branch=master
 
 [npm-url]: https://npmjs.org/package/gulp-assemblyinfo
 [npm-image]: https://badge.fury.io/js/gulp-assemblyinfo.png
