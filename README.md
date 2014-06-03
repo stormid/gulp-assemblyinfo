@@ -10,5 +10,5 @@
 [npm-url]: https://npmjs.org/package/gulp-assemblyinfo
 [npm-image]: https://badge.fury.io/js/gulp-assemblyinfo.png
 
-[depstat-url]: https://david-dm.org/carcer/gulp-assemblyinfo
-[depstat-image]: https://david-dm.org/carcer/gulp-assemblyinfo.png
+[depstat-url]: https://david-dm.org/stormid/gulp-assemblyinfo
+[depstat-image]: https://david-dm.org/stormid/gulp-assemblyinfo.png
