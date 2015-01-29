@@ -1,6 +1,6 @@
 {
   "name": "gulp-assemblyinfo",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "AssemblyInfo.cs file generator plugin for gulp",
   "main": "index.js",
     "scripts": {
