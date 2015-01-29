@@ -22,15 +22,15 @@
     "url": "https://github.com/carcer/gulp-assemblyinfo/issues"
   },
   "dependencies": {
-    "gulp-util": "^2.2.14",
-    "lodash": "^2.4.1",
-    "through2": "^0.4.1",
+    "gulp-util": "^3.0.2",
+    "lodash": "^3.0.0",
+    "through2": "^0.6.3",
     "util": "^0.10.3"
   },
   "devDependencies": {
-    "event-stream": "^3.1.5",
-    "jasmine-node": "^1.14.3",
-    "mocha": "^1.19.0",
-    "vinyl": "^0.2.3"
+    "event-stream": "^3.2.1",
+    "jasmine-node": "^1.14.5",
+    "mocha": "^2.1.0",
+    "vinyl": "^0.4.6"
   }
 }
